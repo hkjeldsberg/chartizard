@@ -1,0 +1,44 @@
+# deps
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# build artifacts
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+
+# env / secrets
+.env*
+!.env.example
+
+# test / coverage
+coverage/
+.playwright-report/
+playwright-report/
+test-results/
+
+# content pipeline
+.content-collections/
+
+# editor / os
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*

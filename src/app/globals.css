@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  /* Typography --------------------------------------------------------- */
+  --font-display: var(--font-fraunces), "Iowan Old Style", "Palatino", serif;
+  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", monospace;
+
+  --text-display-lg: clamp(3rem, 8vw, 5.5rem);
+  --text-display-md: clamp(2rem, 5vw, 3.25rem);
+  --text-lead: 1.125rem;
+
+  /* Base surfaces (light-only in v1) ----------------------------------- */
+  --color-ink: #1a1614;
+  --color-ink-soft: #4a413b;
+  --color-ink-mute: #8a7f78;
+  --color-page: #f6f1ea;
+  --color-surface: #ffffff;
+  --color-hairline: #e4dbd0;
+
+  /* Sector surfaces (Unit 2 will extend; these are provisional) -------- */
+  --color-surface-finance: #f4e9cf;
+  --color-surface-biology: #e2ecd8;
+  --color-surface-statistics: #e4e4ef;
+  --color-surface-medicine: #f1dcd7;
+  --color-surface-physics: #dbe3ea;
+  --color-surface-chemistry: #efe4d2;
+  --color-surface-earth: #ded8c4;
+  --color-surface-business: #eee1d0;
+  --color-surface-software: #e1e5e2;
+  --color-surface-general: #ede6dc;
+  --color-surface-slate: #e6e1da;
+
+  /* Bento tile spans --------------------------------------------------- */
+  --tile-gap: 0.75rem;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-page);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    min-height: 100dvh;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.015em;
+  }
+
+  ::selection {
+    background-color: var(--color-ink);
+    color: var(--color-page);
+  }
+
+  /* Tailwind v4 Preflight no longer ships `cursor: pointer` on buttons.
+     Restore the affordance for every clickable control so users can see
+     what's interactive. Respect disabled buttons (default cursor). */
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  summary {
+    cursor: pointer;
+  }
+  button:disabled,
+  [role="button"][aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+}
+
+@layer components {
+  /* Discrete scrollbar that matches the warm-cream palette.
+     Firefox: scrollbar-width + scrollbar-color (hairline on transparent).
+     WebKit: 6px thumb with hairline fill, darkening to ink-mute on hover.
+     Opt-in via class so the document-level scrollbar stays OS-native. */
+  .scrollbar-discrete {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-hairline) transparent;
+  }
+  .scrollbar-discrete::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-discrete::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-discrete::-webkit-scrollbar-thumb {
+    background-color: var(--color-hairline);
+    border-radius: 9999px;
+  }
+  .scrollbar-discrete::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-ink-mute);
+  }
+  .scrollbar-discrete::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}

@@ -1,0 +1,105 @@
+export function WordCloudThumbnail() {
+  // Hand-placed "word cloud silhouette" — a few big words at centre,
+  // smaller tokens spiralling out. Ink only. No data.
+  return (
+    <svg
+      viewBox="0 0 120 80"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      className="h-full w-full"
+    >
+      {/* Biggest word, centred */}
+      <text
+        x={60}
+        y={46}
+        fontFamily="var(--font-serif)"
+        fontSize={20}
+        fontWeight={600}
+        textAnchor="middle"
+        fill="var(--color-ink)"
+      >
+        the
+      </text>
+      {/* Second tier, offset above & left */}
+      <text
+        x={36}
+        y={24}
+        fontFamily="var(--font-serif)"
+        fontSize={12}
+        fontWeight={600}
+        textAnchor="middle"
+        fill="var(--color-ink)"
+        fillOpacity={0.9}
+      >
+        that
+      </text>
+      <text
+        x={90}
+        y={26}
+        fontFamily="var(--font-serif)"
+        fontSize={11}
+        textAnchor="middle"
+        fill="var(--color-ink)"
+        fillOpacity={0.85}
+      >
+        we
+      </text>
+      {/* Third tier */}
+      <text
+        x={22}
+        y={60}
+        fontFamily="var(--font-serif)"
+        fontSize={9}
+        textAnchor="middle"
+        fill="var(--color-ink)"
+        fillOpacity={0.75}
+      >
+        here
+      </text>
+      <text
+        x={98}
+        y={60}
+        fontFamily="var(--font-serif)"
+        fontSize={9}
+        textAnchor="middle"
+        fill="var(--color-ink)"
+        fillOpacity={0.75}
+      >
+        nation
+      </text>
+      <text
+        x={60}
+        y={66}
+        fontFamily="var(--font-serif)"
+        fontSize={8}
+        textAnchor="middle"
+        fill="var(--color-ink)"
+        fillOpacity={0.7}
+      >
+        dedicated
+      </text>
+      <text
+        x={40}
+        y={72}
+        fontFamily="var(--font-serif)"
+        fontSize={7}
+        textAnchor="middle"
+        fill="var(--color-ink)"
+        fillOpacity={0.6}
+      >
+        war
+      </text>
+      <text
+        x={82}
+        y={14}
+        fontFamily="var(--font-serif)"
+        fontSize={7}
+        textAnchor="middle"
+        fill="var(--color-ink)"
+        fillOpacity={0.55}
+      >
+        liberty
+      </text>
+    </svg>
+  );
+}
