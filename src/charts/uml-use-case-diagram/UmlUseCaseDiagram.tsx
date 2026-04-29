@@ -137,7 +137,7 @@ export function UmlUseCaseDiagram({ width, height }: Props) {
     };
   }
 
-  function useCaseToUseCase(from: UseCase, to: UseCase): EdgeGeom {
+  function calcUseCaseToUseCase(from: UseCase, to: UseCase): EdgeGeom {
     const fromCentre = { x: px(from.cx), y: py(from.cy) };
     const toCentre = { x: px(to.cx), y: py(to.cy) };
     const a = ellipseAnchor(from, toCentre);
@@ -237,7 +237,7 @@ export function UmlUseCaseDiagram({ width, height }: Props) {
   // Representative association (Customer → Withdraw).
   const assocGeom = actorToUseCase(customer, withdraw);
   // Include edge geometry (Withdraw → Authenticate).
-  const includeGeom = useCaseToUseCase(withdraw, authenticate);
+  const includeGeom = calcUseCaseToUseCase(withdraw, authenticate);
 
   // System boundary pixel rect.
   const boundPxX = px(BOUND_X);
@@ -327,7 +327,7 @@ export function UmlUseCaseDiagram({ width, height }: Props) {
             // include edge — dashed with open arrow at the target (Authenticate).
             const from = ucById.get(e.from)!;
             const to = ucById.get(e.to)!;
-            const g = useCaseToUseCase(from, to);
+            const g = calcUseCaseToUseCase(from, to);
             return (
               <g key={`inc-${i}`}>
                 <line

@@ -59,7 +59,7 @@ function buildHemicycle(
   const floats = raw.map((r) => (r / rawSum) * total);
   const counts = floats.map((f) => Math.floor(f));
   // Distribute remainder to rows with largest fractional parts.
-  let remainder = total - counts.reduce((a, b) => a + b, 0);
+  const remainder = total - counts.reduce((a, b) => a + b, 0);
   const fracs = floats
     .map((f, i) => ({ i, frac: f - Math.floor(f) }))
     .sort((a, b) => b.frac - a.frac);

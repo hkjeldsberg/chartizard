@@ -67,7 +67,7 @@ function buildPFData(boxSize: number, reversalBoxes: number) {
   // Snap a price to its box level (floor to nearest box boundary)
   const snap = (v: number) => Math.floor(v / boxSize) * boxSize;
 
-  let currentPrice = prices[0];
+  const currentPrice = prices[0];
   let columnTop = snap(currentPrice);
   let columnBottom = snap(currentPrice);
   let colKind: "X" | "O" = "X";
