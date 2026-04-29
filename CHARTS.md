@@ -330,3 +330,73 @@ Hexagonal binning chart
 - Trellis / faceted scatter matrix (SPLOM): Scatterplot matrix of all variable pairs.
 - Mosaic plot (already v0) companion: Doubledecker plot for conditional proportions.
 - Nomogram (already v0) companion: Clinical prediction nomogram with points scales.
+
+# Chart List v2
+
+## Statistical / Data Science
+- Frequency polygon: Line connecting histogram bin midpoints; shows distribution shape without bars.
+- Ogive (cumulative frequency curve): S-shaped curve of cumulative counts or percentages up to each value.
+- Rootogram: Hanging histogram where bars drop from a fitted distribution curve; diagnoses model-data fit.
+- Half-normal plot: Absolute factorial effects on a half-normal probability scale; identifies active effects.
+- Time series decomposition plot: Signal split into trend, seasonal, and residual components stacked vertically.
+- Cross-correlation plot (CCF): Correlation between two time series across a range of lags.
+- Lag plot: Scatter of a series against a lagged version of itself; reveals serial correlation and periodicity.
+- Empirical variogram: Semi-variance vs lag distance; quantifies spatial autocorrelation structure.
+- Swimmer plot: Horizontal bars per patient showing treatment exposure, response, and events over time.
+- Waterfall plot (oncology): Sorted bars of percent change from baseline per patient; standard in clinical trials.
+- Age-period-cohort (APC) plot: Three-way decomposition of rates by age, calendar period, and birth cohort.
+
+## Finance / Trading
+- Yield curve: Interest rates across maturities (3 m – 30 y) at a point in time; inversion signals recession.
+- Drawdown chart: Running loss from a portfolio's rolling peak; visualises maximum drawdown over time.
+- Bollinger bands chart: Moving average with ±σ envelopes showing price volatility and mean-reversion signals.
+- Relative strength index (RSI) chart: Momentum oscillator 0–100 marking overbought / oversold conditions.
+- Option Greeks surface: Heatmap or 3-D surface of a Greek (delta, gamma, vega…) vs spot price and expiry.
+- Tornado chart (sensitivity / DCF): Horizontal bars ranked by parameter influence on a model output; common in valuation.
+
+## Engineering / Physics / Thermodynamics
+- Mohr's circle: Graphical transformation of stress or strain components at a point in a material.
+- Psychrometric chart: Dry-bulb temperature vs humidity ratio with enthalpy, wet-bulb, and dew-point overlays.
+- Mollier diagram (h-s / P-h): Enthalpy vs entropy or pressure; used for steam cycles and refrigeration.
+- S-N curve (Wöhler curve): Stress amplitude vs cycles to failure on log–log axes; materials fatigue life.
+- Stress-strain curve: Material response from elastic region through yield point to fracture.
+- T-s diagram: Temperature vs specific entropy; visualises thermodynamic cycles (Rankine, Brayton…).
+- Free body diagram: Isolated body with all applied forces, moments, and reactions labelled.
+- Signal flow graph (Mason's graph): Directed graph of signal paths; used in control and circuit analysis.
+- Velocity triangle diagram: Inlet / outlet velocity triangles for turbomachinery stage analysis.
+- Creep curve: Strain vs time at elevated temperature showing three-stage creep behaviour.
+
+## Maps / Cartography
+- Minard-style flow map: Proportional-width flow on a geographic path (classic: Napoleon's march).
+- Dasymetric map: Choropleth refined by land-use masks; redistributes values to inhabited areas only.
+- Trivariate choropleth: Three variables encoded with a joint ternary colour scheme over regions.
+
+## Business / Strategy
+- BCG matrix (Growth-Share matrix): 2×2 of market-growth rate vs relative market share for portfolio analysis.
+- Ansoff matrix: 2×2 of product / market novelty mapping growth strategies.
+- Perceptual map: Scatter of brands or products on two competitive-attribute dimensions.
+- Porter's Five Forces diagram: Radial or spoke layout of competitive forces around a central industry.
+- Break-even analysis chart: Revenue and total-cost curves crossing at the break-even quantity.
+- Value chain diagram: Sequential primary and support activities forming a firm's value-creation chain.
+- Customer journey map: Timeline of touchpoints with emotion curve and pain / gain annotations.
+- Empathy map: Quadrant (Says / Thinks / Does / Feels) used in UX and design-thinking synthesis.
+- Business model canvas: Nine-block strategic layout (key partners, activities, value prop, channels, etc.).
+
+## UML / Software Architecture (additions)
+- UML timing diagram: Lifelines showing discrete state changes on a shared time axis.
+- UML communication diagram: Numbered messages on an object-collaboration graph (alternative to sequence).
+- UML interaction overview diagram: Activity diagram whose nodes are interaction fragments.
+- UML package diagram: Namespaces, dependencies, and imports between model packages.
+- UML profile diagram: Stereotypes, tagged values, and constraints that extend the UML metamodel.
+- Call graph: Directed graph of function or method invocations; used in profiling and static analysis.
+- Network topology diagram: IT infrastructure nodes (routers, switches, servers, firewalls) and links.
+- Memory map / address-space diagram: Visual layout of memory segments, regions, and address ranges.
+
+## Miscellaneous / Domain-Specific
+- Heat-map calendar (contribution graph): GitHub-style grid of daily activity intensity over a year.
+- Sports shot chart: Court or field diagram with shot locations encoded by outcome and frequency.
+- Isometric projection drawing: Technical 3-D view on 30° axes; engineering, architecture, game design.
+- Floor plan: Overhead architectural layout of rooms, walls, doors, and openings.
+- Genealogical fan chart: Radial pedigree where ancestors radiate outward in concentric arcs.
+- Windrose with frequency bands: Circular histogram combining direction, speed frequency, and Beaufort intensity.
+- Comic-strip / narrative chart: Sequential panels mapping character or story-element trajectories over time.
