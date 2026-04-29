@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <section className="mb-10 pt-8 sm:pt-14">
       <p className="font-mono text-xs uppercase tracking-[0.22em] text-[--color-ink-mute]">
-        Chartizard — An atlas of charts
+        Chartizard — Gotta chart em all
       </p>
       <h1 className="mt-4 font-display font-medium leading-[0.92] tracking-[-0.02em] text-[--color-ink] text-[length:--text-display-md] md:text-[length:--text-display-lg]">
         Every chart ever invented.

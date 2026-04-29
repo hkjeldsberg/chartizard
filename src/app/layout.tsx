@@ -24,7 +24,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chartizard — An atlas of every chart type",
+  title: "Chartizard — Gotta chart em all",
   description:
     "An interactive, filterable gallery of every chart, diagram, and plot type — each one explained element by element with real-world examples.",
   applicationName: "Chartizard",

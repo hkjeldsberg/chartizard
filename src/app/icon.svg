@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="c">
+      <circle cx="16" cy="16" r="15"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#c)">
+    <!-- Bottom half: warm cream -->
+    <rect x="0" y="16" width="32" height="16" fill="#f6f1ea"/>
+
+    <!-- Top half: pokeball red -->
+    <rect x="0" y="0" width="32" height="16" fill="#c94f3a"/>
+
+    <!-- Ascending bar chart (4 bars, shortest→tallest left→right) -->
+    <rect x="4"  y="11" width="4" height="5"  rx="0.5" fill="rgba(255,255,255,0.88)"/>
+    <rect x="10" y="9"  width="4" height="7"  rx="0.5" fill="rgba(255,255,255,0.88)"/>
+    <rect x="16" y="7"  width="4" height="9"  rx="0.5" fill="rgba(255,255,255,0.88)"/>
+    <rect x="22" y="5"  width="4" height="11" rx="0.5" fill="rgba(255,255,255,0.88)"/>
+
+    <!-- Horizontal divider -->
+    <rect x="0" y="15" width="32" height="2" fill="#1a1614"/>
+
+    <!-- Center button -->
+    <circle cx="16" cy="16" r="4.5" fill="#f6f1ea"/>
+    <circle cx="16" cy="16" r="4.5" fill="none" stroke="#1a1614" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="1.5" fill="#1a1614"/>
+  </g>
+
+  <!-- Outer border -->
+  <circle cx="16" cy="16" r="15" fill="none" stroke="#1a1614" stroke-width="1.5"/>
+</svg>
