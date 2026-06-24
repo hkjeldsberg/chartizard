@@ -3428,3 +3428,9 @@ Main-agent tokens for this integration pass (manifest + merges + post-mortem + S
 - 2 tile-size bumps (Piper S→M, Stiff S→M).
 - Parallel-slot self-healing worked for 4th consecutive batch.
 - Minor contract drift: B1 wrote to TODO.md/TOKENS.md (first such incident in 4 batches). User/linter reverted; reinforce in next batch.
+
+## Favicon/apple-icon squircle corners (2026-06-24)
+
+| Subtask                              | Model  | Tokens |
+|----------------------------------------|--------|--------|
+| Squircle icon.svg edit + apple-icon.png gen via sharp | Sonnet | ~18k |

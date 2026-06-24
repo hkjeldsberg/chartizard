@@ -1,5 +1,8 @@
 # In progress / To be implemented
 
+## Completed
+- [x] Favicon/apple-icon: rounded-square (squircle) corners. `src/app/icon.svg` clip-path circle → `rect rx=6.6/32` (22% radius); outer border circle → matching rect. Generated `src/app/apple-icon.png` (180×180) from updated SVG via `sharp` (now a devDependency — no rasterizer was previously available in the project/system). Artwork/colors unchanged.
+
 ## Other
 - The Bento components on the landing page have gaps between them. Adjust everything so there is no white space between chart thumbnails, and keep everything within a single "rectangle"
 
